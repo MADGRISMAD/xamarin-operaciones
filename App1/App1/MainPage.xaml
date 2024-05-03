@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="App1.MainPage">
+    <StackLayout>
+        <Label Text="Instituto Tecnológico de Tijuana"
+               TextColor="Black"
+               FontSize="15"
+               HorizontalTextAlignment="Center"/>
+        <Label Text="Desarrollo de aplicaciones móviles"
+               TextColor="Black"
+               FontSize="12"
+               HorizontalTextAlignment="Center"/>
+        <Label Text="Manuel Alejandro Sabino Andres y Araceli Elizabeth Garcia Armijo"
+               TextColor="Black"
+               FontSize="12"
+               HorizontalTextAlignment="Start"/>
+        <Image Source="avion.png"
+               HeightRequest="30"
+               WidthRequest="30"
+               HorizontalOptions="Center"
+               Aspect="Fill"/>
+
+        <!-- Campos de entrada -->
+        <Label Text="Escribe el primer número"
+               TextColor="Black"
+               FontSize="17"
+               TextDecorations="Underline"
+               HorizontalTextAlignment="Center"/>
+        <Entry x:Name="entradaNumero1"
+               Placeholder="click aquí"
+               FontAttributes="none"
+               FontSize="10"/>
+
+        <Label Text="Escribe el segundo número"
+               TextColor="Black"
+               FontSize="17"
+               TextDecorations="Underline"
+               HorizontalTextAlignment="Center"/>
+        <Entry x:Name="entradaNumero2"
+               Placeholder="click aquí"
+               FontAttributes="none"
+               FontSize="10"/>
+
+        <!-- Botón "Ejecutar" -->
+        <Button Text="Ejecutar"
+                Clicked="EventoES"
+                TextColor="Black"
+                BackgroundColor="Lavender"/>
+
+        <!-- Resultados de las operaciones matemáticas -->
+        <Label Text="El resultado de la suma es :"
+               TextColor="Black"
+               FontSize="17"
+               TextDecorations="Underline"
+               HorizontalTextAlignment="Center"/>
+        <Entry x:Name="resultadoSuma"
+               IsEnabled="False"
+               FontAttributes="none"
+               FontSize="10"/>
+
+        <Label Text="El resultado de la resta es :"
+               TextColor="Black"
+               FontSize="17"
+               TextDecorations="Underline"
+               HorizontalTextAlignment="Center"/>
+        <Entry x:Name="resultadoResta"
+               IsEnabled="False"
+               FontAttributes="none"
+               FontSize="10"/>
+
+        <Label Text="El resultado de la multiplicación es :"
+               TextColor="Black"
+               FontSize="17"
+               TextDecorations="Underline"
+               HorizontalTextAlignment="Center"/>
+        <Entry x:Name="resultadoMultiplicacion"
+               IsEnabled="False"
+               FontAttributes="none"
+               FontSize="10"/>
+
+        <Label Text="El resultado de la división es :"
+               TextColor="Black"
+               FontSize="17"
+               TextDecorations="Underline"
+               HorizontalTextAlignment="Center"/>
+        <Entry x:Name="resultadoDivision"
+               IsEnabled="False"
+               FontAttributes="none"
+               FontSize="10"/>
+
+        <Image Source="avion.png"
+               HeightRequest="30"
+               WidthRequest="30"
+               HorizontalOptions="Center"
+               Aspect="Fill"/>
+    </StackLayout>
+</ContentPage>
